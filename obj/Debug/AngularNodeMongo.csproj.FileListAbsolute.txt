@@ -1,0 +1,12 @@
+C:\Bijender\DotNetProgramming\Angular\AngularNodeMongo\AngularNodeMongo\bin\AngularNodeMongo.dll.config
+C:\Bijender\DotNetProgramming\Angular\AngularNodeMongo\AngularNodeMongo\bin\AngularNodeMongo.dll
+C:\Bijender\DotNetProgramming\Angular\AngularNodeMongo\AngularNodeMongo\bin\AngularNodeMongo.pdb
+C:\Bijender\DotNetProgramming\Angular\AngularNodeMongo\AngularNodeMongo\obj\Debug\AngularNodeMongo.dll
+C:\Bijender\DotNetProgramming\Angular\AngularNodeMongo\AngularNodeMongo\obj\Debug\AngularNodeMongo.pdb
+C:\Bijender\DotNetProgramming\Angular\AngularNodeMongo\AngularNodeMongo\obj\Debug\AngularNodeMongo.csprojResolveAssemblyReference.cache
+E:\DotNetProgramming\Angular\AngularNodeMongo\AngularNodeMongo\bin\AngularNodeMongo.dll.config
+E:\DotNetProgramming\Angular\AngularNodeMongo\AngularNodeMongo\bin\AngularNodeMongo.dll
+E:\DotNetProgramming\Angular\AngularNodeMongo\AngularNodeMongo\bin\AngularNodeMongo.pdb
+E:\DotNetProgramming\Angular\AngularNodeMongo\AngularNodeMongo\obj\Debug\AngularNodeMongo.csprojResolveAssemblyReference.cache
+E:\DotNetProgramming\Angular\AngularNodeMongo\AngularNodeMongo\obj\Debug\AngularNodeMongo.dll
+E:\DotNetProgramming\Angular\AngularNodeMongo\AngularNodeMongo\obj\Debug\AngularNodeMongo.pdb

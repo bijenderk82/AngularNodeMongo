@@ -1,0 +1,49 @@
+﻿<div >
+    <br />
+    <br />
+    <div class="row">
+        <div class="col-sm-8">
+            <img src="../../resources/EmpPics/Eugene_Lee50.jpg">
+            <strong> Customers</strong>
+        </div>
+        <div class="col-sm-4">
+            <div class="input-group" id="quick-search">
+                <input tabindex="1" type="text" name="SearchString" value="" class="form-control" placeholder="Quick Search" />
+                <span class="input-group-btn">
+                    <button tabindex="2" name="Search_x" value="1" id="Search" type="submit"  class="btn btn-default" title="Quick Search"><i class="glyphicon glyphicon-search"></i></button>
+                    <button tabindex="3" name="NoFilter_x" value="1" id="NoFilter_x" type="submit" class="btn btn-default" title="Show All"><i class="glyphicon glyphicon-remove-circle"></i></button>
+                </span></div>
+        </div>
+    </div>
+
+    <hr />
+   
+   <!-- <table class="table table-hover table-striped table-condensed table-bordered ordersTable" ng-controller="EmployeesCtrl">
+        <thead>
+            <tr>
+                <th data-ng-click="setOrder('Photo')">Photo</th>
+                <th data-ng-click="setOrder('LastName')">Last Name</th>
+                <th data-ng-click="setOrder('FirstName')">First Name</th>
+                <th data-ng-click="setOrder('Title')">Title</th>
+                <th data-ng-click="setOrder('HireDate')">Hire Data</th>
+                <th data-ng-click="setOrder('Country')">Country</th>
+                <th data-ng-click="setOrder('ReportsTo')">Report To</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="emp in employees | orderBy:orderby:reverse">
+                <td></td>
+                <td>{{emp.LastName}}</td>
+                <td>{{emp.FirstName}}</td>
+                <td>{{emp.Title}}</td>
+                <td>{{emp.HireDate}}</td>
+                <td>{{emp.Country}}</td>
+                 <td>{{emp.ReportsTo}}</td>
+            </tr>
+        </tbody>
+    </table>-->
+
+    <div class="gridStyle" ng-grid="gridOptions">
+
+    </div>
+</div>

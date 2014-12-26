@@ -1,0 +1,174 @@
+﻿<div ng-controller="CustomerDetailCtrl">
+    <br />
+    <br />
+    <!--<div>
+        <img src="../../resources/table_icons/account_balances.png" /><strong>Customers</strong>
+    </div>-->
+
+
+
+
+
+    <div class="row">
+        <div class="col-xs-11 col-md-12">
+            <form enctype="multipart/form-data" name="myform">
+                <div class="page-header">
+                    <img src="../../resources/EmpPics/Amy_Jones50.jpg"><strong> Customer Details</strong>
+                </div>
+
+                <div class="panel panel-default">
+                    <!-- Edit this file to change the layout of the detail view form -->
+
+                    <a name="detail-view"></a>
+                    <div class="panel-heading"><h3 class="panel-title"><strong>Customer Detail View</strong></h3></div>
+
+                    <div class="panel-body">
+
+                        <hr>
+
+                        <div class="row">
+                            <!-- form inputs -->
+                            <div class="col-md-8 col-lg-10" id="customers_dv_form">
+                                <fieldset class="form-horizontal">
+
+                                    <div class="form-group">
+                                        <label for="CustomerID" class="control-label col-lg-3">Customer ID</label>
+                                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
+                                            <p class="form-control-static" id="CustomerID">{{RowDetails.CustomerID}}</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="CompanyName" class="control-label col-lg-3">Company Name</label>
+                                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
+                                            <p class="form-control-static" id="CompanyName">{{RowDetails.CompanyName}}</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="ContactName" class="control-label col-lg-3">Contact Name</label>
+                                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
+                                            <p class="form-control-static" id="ContactName">{{RowDetails.ContactName}}</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="ContactTitle" class="control-label col-lg-3">Contact Title</label>
+                                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
+                                            <p class="form-control-static" id="ContactTitle">{{RowDetails.ContactTitle}}</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="Address" class="control-label col-lg-3">Address</label>
+                                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
+                                            <p class="form-control-static" id="Address">{{RowDetails.Address}}</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="City" class="control-label col-lg-3">City</label>
+                                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
+                                            <p class="form-control-static" id="City">{{RowDetails.City}}</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="Region" class="control-label col-lg-3">Region</label>
+                                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
+                                            <p class="form-control-static" id="Region">{{RowDetails.Region}}</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="PostalCode" class="control-label col-lg-3">Postal/Zip Code</label>
+                                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
+                                            <p class="form-control-static" id="PostalCode">{{RowDetails.PostalCode}}</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="s2id_autogen1" class="control-label col-lg-3">Country</label>
+                                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
+                                            <p class="form-control-static" id="PostalCode">{{RowDetails.Country}}</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="Phone" class="control-label col-lg-3">Phone</label>
+                                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
+                                            <p class="form-control-static" id="Phone">{{RowDetails.Phone}}</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="Fax" class="control-label col-lg-3">Fax</label>
+                                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
+                                            <p class="form-control-static" id="Fax">{{RowDetails.Fax}}</p>
+                                        </div>
+                                    </div>
+
+                                </fieldset>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="panel panel-default">
+
+        <div class="panel-heading"><h3 class="panel-title"><strong>Customer's Orders</strong></h3></div>
+
+        <div class="panel-body">
+
+            <div class="col-sm-4">
+                <div class="input-group" id="quick-search">
+                    <input tabindex="1" type="text" ng-model="filterText" value="" class="form-control" placeholder="Quick Search" />
+                    <span class="input-group-btn">
+                        <button tabindex="2" name="Search_x" value="1" id="Search" type="submit" class="btn btn-default" title="Quick Search"><i class="glyphicon glyphicon-search"></i></button>
+                        <button tabindex="3" name="NoFilter_x" value="1" id="NoFilter_x" type="submit" class="btn btn-default" title="Show All"><i class="glyphicon glyphicon-remove-circle"></i></button>
+                    </span>
+                </div>
+            </div>
+            <br />
+            <br />
+            <!--<div class="gridStyle" ng-grid="gridOptions"></div>-->
+            <table class="table table-hover table-striped table-condensed table-bordered ordersTable" >
+                <thead>
+                    <tr>
+                        <th data-ng-click="setOrder('OrderID')">Order ID</th>
+                        <th data-ng-click="setOrder('OrderDate')">Order Date</th>
+                        <th data-ng-click="setOrder('ShipName')">Ship Name</th>
+                        <th data-ng-click="setOrder('HireDate')">Hire Date</th>
+                        <th data-ng-click="setOrder('ShipAddress')">Ship Address</th>
+                        <th data-ng-click="setOrder('ShipCity')">Ship PostalCode</th>
+                        <th></th>
+                        <th data-ng-click="setOrder('ShipCountry')">Ship Country</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="ord in orders | filter:filterText | orderBy:orderby:reverse">
+                        <td>{{ord.OrderID}}</td>
+                        <td>{{ord.OrderDate}}</td>
+                        <td>{{ord.ShipName}}</td>
+                        <td>{{ord.HireDate}}</td>
+                        <td>{{ord.ShipAddress}}</td>
+                        <td>{{ord.ShipCity}}</td>
+                        <td>{{ord.ShipPostalCode}}</td>
+                        <td>{{ord.ShipCountry}}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            
+        </div>
+    </div>
+
+
+</div>
